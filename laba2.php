@@ -35,3 +35,13 @@ echo "<br>" . $days_per_language;
 
 //number 12
 echo 8**2;
+
+//number 13
+$my_num = 13;
+$answer = $my_num;
+$answer += 2;
+$answer *= 2;
+$answer -= 2;
+$answer /= 2;
+$answer -= $my_num;
+echo $answer;
