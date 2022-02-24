@@ -12,3 +12,16 @@ $order .= " Hello World!";
 //// Don't change the line below
 
 echo "<br>Your order is:$very_bad_unclear_name.";
+
+//number 2
+$n1 = 10;
+echo $n1 . "<br>";
+$n2 = 1001;
+echo $n2;
+$n3 = 123.456;
+echo $n3 . "<br>";
+echo (6+6) . "<br>";
+
+$last_month = 1187.23;
+$this_month = 1089.98;
+echo ($last_month - $this_month);
