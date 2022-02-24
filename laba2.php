@@ -119,3 +119,10 @@ while ($sum < 10) {
     $sum += $mas6[$count];
     $count ++;
 }
+
+//number 15
+function printStringReturnNumber() {
+    echo "<br>Hello World!!!";
+    return 101;
+}
+echo "<br>" . $my_num = printStringReturnNumber();
