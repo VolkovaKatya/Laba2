@@ -126,3 +126,38 @@ function printStringReturnNumber() {
     return 101;
 }
 echo "<br>" . $my_num = printStringReturnNumber();
+
+//number 16
+function increaseEnthusiasm($str = "up") {
+    return $str . "!";
+}
+echo "<br>" . increaseEnthusiasm("Hello World!!!!!");
+
+function repeatThreeTimes($str = "up") {
+    return $str . $str . $str;
+}
+echo "<br>" . repeatThreeTimes("Hello World!!!!!");
+echo "<br>" . increaseEnthusiasm(repeatThreeTimes("love"));
+
+function cut($str = "OneTwoThree", $amount = 10) {
+    return substr($str,0,$amount);
+}
+
+function Sort($mas, $endIter, $nowIter = 0) {
+    echo $mas[$nowIter] . " ";
+    if ($nowIter < $endIter) {
+        Sort($mas, $endIter, ++$nowIter);
+    } else
+        return;
+}
+
+function Add($n, $sum = 0) {
+    while ($n > 0) {
+        $sum += $n%10;
+        $n /= 10;
+    }
+    echo "$sum";
+    if ($sum > 9) Add($sum);
+    else return;
+}
+
