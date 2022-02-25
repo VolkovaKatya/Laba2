@@ -252,4 +252,12 @@ else
     echo "<br>";
 
 
+//number 19
+$XsLine = "";
+echo "<br>";
+for ($i = 0; $i < 20; $i++) {
+    $XsLine .= "x";
+    echo "$XsLine<br>";
+}
+
 
