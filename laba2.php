@@ -260,4 +260,42 @@ for ($i = 0; $i < 20; $i++) {
     echo "$XsLine<br>";
 }
 
+//number 20
+$arr = array(1, 2, 3, 7, 4);
+function Sr(array $arr , $num = 0, $sum = 0) {
+    if ($num < count($arr) - 1)
+        Sr($arr, $num + 1, $sum + $arr[$num]);
+    if ($num == count($arr) - 1)
+        echo ($sum + $arr[$num]) / $num;
+}
+
+function OneHundred($num = 1, $sum = 1) {
+    if ($num < 100)
+        OneHundred(num+1, $sum+$num);
+    if ($num == 100)
+        echo $sum + $num;
+}
+OneHundred();
+
+function MasSqrt(array &$mas, $num = 0) {
+    if ($num < count($mas)) {
+        $mas[$num] = sqrt($mas[$num]);
+        echo $mas[num] ." ";
+        MasSqrt($mas, num+1);
+    }
+}
+
+$alphabet = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+    'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
+$NewAlphabet = array();
+function NewMas(array &$NewAlp, array $alp, $num) {
+    if ($num < 26) {
+        $NewAlp["'alp[$num]'"] = $num + 1;
+        NewMas($NewAlp, $alp, num + 1);
+    }
+}
+
+$OneNull = '1234567890';
+$SumOneNull = array_sum(str_split($OneNull, 2));
+echo $SumOneNull;
 
