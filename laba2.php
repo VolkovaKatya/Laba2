@@ -221,6 +221,35 @@ echo "<br>" . count($Arr) . "<br>";
 echo "<br>" . $Arr[count($Arr) - 1] . "<br>";
 echo "<br>" . $Arr[count($Arr) - 2] . "<br>";
 
+//number 18
+function function1($var1, $var2) {
+    $sum = $var1 + $var2;
+    if ($sum > 10)
+        return true;
+    else return false;
+}
+function function2($var1, $var2){
+    if ($var1 == $var2)
+        return true;
+    else return false;
+}
+function function3($age) {
+    if ($age < 10 || $age > 99)
+        echo "значение вне диапазона";
+    else {
+        $sum = $age % 10 + (($age - $age % 10) / 10);
+        if ($sum < 10)
+            echo "сумма цифр однозначна";
+        else
+            echo "сумма цифр двузначна";
+    }
+}
+
+$arr = array(1, 2, 3, 4, 5);
+if (count($arr) == 3)
+    echo array_sum($arr) ."<br>";
+else
+    echo "<br>";
 
 
 
