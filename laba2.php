@@ -161,3 +161,66 @@ function Add($n, $sum = 0) {
     else return;
 }
 
+//number 17
+$Xs = "";
+$masXs = array();
+for($i = 1; $i < 10; $i++) {
+    $Xs = $Xs . "x";
+    array_push($masXs,$Xs);
+    echo $masXs[$i] . "<br>";
+}
+
+function arrayFill($symbol,$am) {
+    $arr = array();
+    for ($i = 0; $i < $am; $i++) {
+        array_push($arr,$symbol);
+    }
+    return $arr;
+}
+
+$Array = array(array(1,2,3), array(4,5), array(6));
+function SumCounter(array $arr) {
+    $sum = array_sum($arr);
+    foreach($arr as $c) {
+        if (is_array($c))
+            $sum += SumCounter($c);
+    }
+    return $sum;
+}
+
+$ArrArrArr = array();
+for($i = 0; $i < 3; $i++) {
+    for($j = 0; $j < 3; $j++) {
+        $ArrArrArr[$i][$j] = $i + 3 * $j + 1;
+    }
+}
+
+$array2539 = array(2, 5, 3, 9);
+$result = $array2539[0]*$array2539[1]+$array2539[2]*$array2539[3];
+echo "<br>" . $result . "<br>";
+
+$user = array(
+    "surname" => "Volkova",
+    "name" => "Ekaterina",
+    "patronymic" => "Alexeevna"
+);
+foreach ($user as $str)
+    echo $str . " ";
+
+$date = array(
+    "day" => 25,
+    "month" => 02,
+    "year" => 2022
+);
+echo $date["'year'"] . ".";
+echo $date["'month'"] . ".";
+echo $date["'day'"];
+
+$Arr = array('a','b','c','d','e');
+echo "<br>" . count($Arr) . "<br>";
+echo "<br>" . $Arr[count($Arr) - 1] . "<br>";
+echo "<br>" . $Arr[count($Arr) - 2] . "<br>";
+
+
+
+
